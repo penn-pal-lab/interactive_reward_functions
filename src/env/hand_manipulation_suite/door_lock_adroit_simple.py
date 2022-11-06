@@ -114,7 +114,8 @@ class DoorLockEnvAdroitSimple(mujoco_env.MujocoEnv, utils.EzPickle,
         self.use_latch_pose_reward = False
         self.use_dense_reward = True
         self.use_engineered_reward = False
-        self.use_verification_reward = True
+        self.use_verification_reward = False
+        # TODO(for users): train an IRF policy first and put the checkpoint path below
         self.verifier_checkpoint_path = "checkpoints/door_lock_verifier"
         if self.use_verification_reward:
             self.pi_v = SAC.load(self.verifier_checkpoint_path)
