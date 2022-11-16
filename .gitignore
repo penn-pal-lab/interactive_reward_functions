@@ -137,6 +137,5 @@ figures/
 MUJOCO_LOG.TXT
 *.zip
 *.npy
-*.png
 
 nohup.out
