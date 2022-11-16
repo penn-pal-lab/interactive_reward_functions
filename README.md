@@ -6,25 +6,23 @@ CoRL 2022 (Oral)\
 
 <a href="https://sites.google.com/view/lirf-corl-2022/">
 <p align="center">
-<img src="img/teaser.png" width="600">
+<img src="readme_imgs/concept_figure.png" width="600">
 </p>
 </img></a>
 
-Training visual control policies from scratch on a new robot typically requires generating large amounts of robot-specific data. How might we leverage data previously collected on another robot to reduce or even completely remove this need for robot-specific data? We propose a "robot-aware control" paradigm that achieves this by exploiting readily available knowledge about the robot. We then instantiate this in a robot-aware model-based RL policy by training modular dynamics models that couple a transferable, robot-aware world dynamics module with a robot-specific, potentially analytical, robot dynamics module. This also enables us to set up visual planning costs that separately consider the robot agent and the world. Our experiments on tabletop manipulation tasks with simulated and real robots demonstrate that these plug-in improvements dramatically boost the transferability of visual model-based RL policies, even permitting zero-shot transfer of visual manipulation skills onto new robots. 
+Physical interactions can often help reveal information that is not readily apparent. For example, we may tug at a table leg to evaluate whether it is built well, or turn a water bottle upside down to check that it is watertight. We propose to train robots to acquire such interactive behaviors automatically, for the purpose of evaluating the result of an attempted robotic skill execution. These evaluations in turn serve as "interactive reward functions" (IRFs) for training reinforcement learning policies to perform the target skill, such as screwing the table leg tightly. In addition, even after task policies are fully trained, IRFs can serve as verification mechanisms that improve online task execution. For any given task, our IRFs can be conveniently trained using only examples of successful outcomes, and no further specification is needed to train the task policy thereafter. In our evaluations on door locking and weighted block stacking in simulation, and screw tightening on a real robot, IRFs enable large performance improvements, even outperforming baselines with access to demonstrations or carefully engineered rewards.
 
 If you find this work useful in your research, please cite:
-
 ```
 @inproceedings{
-  hu2022know,
-  title={Know Thyself: Transferable Visual Control Policies Through Robot-Awareness},
-  author={Edward S. Hu and Kun Huang and Oleh Rybkin and Dinesh Jayaraman},
-  booktitle={International Conference on Learning Representations},
+huang2022training,
+  title={Training Robots to Evaluate Robots: Example-Based Interactive Reward Functions for Policy Learning},
+  author={Kun Huang and Edward S. Hu and Dinesh Jayaraman},
+  booktitle={6th Annual Conference on Robot Learning},
   year={2022},
-  url={https://openreview.net/forum?id=o0ehFykKVtr}
+  url={https://openreview.net/forum?id=sK2aWU7X9b8}
 }
 ```
-
 
 
 
