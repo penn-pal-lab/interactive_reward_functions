@@ -2,7 +2,7 @@
 
 CoRL 2022 (Oral)\
 [Kun Huang](https://www.linkedin.com/in/kun-huang-620034171/), [Edward S. Hu](https://edwardshu.com/), [Dinesh Jayaraman](https://www.seas.upenn.edu/~dineshj/)
-#### [[Paper (Openreview)]](https://openreview.net/forum?id=sK2aWU7X9b8) [[Project Website]](https://sites.google.com/view/lirf-corl-2022/)
+#### [[Paper (Openreview)]](https://openreview.net/forum?id=sK2aWU7X9b8) [[Project Website]](https://sites.google.com/view/lirf-corl-2022/) [[Poster]](https://github.com/penn-pal-lab/interactive_reward_functions/blob/main/readme_imgs/poster.pdf)
 
 <a href="https://sites.google.com/view/lirf-corl-2022/">
 <p align="center">
